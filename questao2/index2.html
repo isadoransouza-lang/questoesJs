@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabuada</title>
+   
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Gerador de Tabuada</h1>
+
+        <label>Digite um número de 1 a 20:</label>
+
+        <input
+            type="number"
+            id="numero"
+            placeholder="Digite um número"
+            min="1"
+            max="20"
+            step="1"
+        >
+
+        <button onclick="gerarTabuada()">
+            Gerar Tabuada
+        </button>
+
+        <button class="limpar" onclick="limpar()">
+            Limpar
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="isis2.js"></script>
+
+</body>
+</html>

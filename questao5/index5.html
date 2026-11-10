@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Alunos</title>
+   
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Pesquisa de Alunos</h1>
+
+    <label>Pesquisar pelo nome:</label>
+    <input type="text" id="pesquisa" oninput="pesquisarAlunos()">
+
+    <label>Filtrar por curso:</label>
+
+    <select id="curso" onchange="pesquisarAlunos()">
+        <option value="">Todos os cursos</option>
+        <option value="Informática">Informática</option>
+        <option value="Administração">Administração</option>
+        <option value="Enfermagem">Enfermagem</option>
+    </select>
+
+    <h3 id="quantidade"></h3>
+
+    <div id="resultado"></div>
+
+</div>
+
+<script src="isis5.js"></script>
+</body>
+</html>

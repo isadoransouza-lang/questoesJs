@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Controle de Estoque</h1>
+
+    <label>Nome do produto:</label>
+    <input type="text" id="nome">
+
+    <label>Código:</label>
+    <input type="text" id="codigo">
+
+    <label>Quantidade:</label>
+    <input type="number" id="quantidade">
+
+    <label>Preço unitário:</label>
+    <input type="number" id="preco" >
+
+    <button onclick="cadastrarProduto()">Cadastrar produto</button>
+
+    <h2>Movimentação</h2>
+
+    <label>Código do produto:</label>
+    <input type="text" id="codigoMov">
+
+    <label>Quantidade movimentada:</label>
+    <input type="number" id="quantidadeMov">
+
+    <button onclick="entrada()">Entrada</button>
+
+    <button onclick="saida()">Saída</button>
+
+    <h2>Produtos cadastrados</h2>
+
+    <div id="valorTotal"></div>
+
+    <div id="lista"></div>
+
+    <div id="mensagem"></div>
+
+</div>
+
+<script src="isis6.js"></script>
+</body>
+</html>
