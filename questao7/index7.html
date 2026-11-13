@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento da Frequência Escolar</title>
+</head>
+<body>
+    <h1>Sistema de Monitoramento da Frequência Escolar</h1>
+
+    <h2>Cadastrar Estudante</h2>
+
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="matricula" placeholder="Matrícula">
+    <input type="text" id="turma" placeholder="Turma">
+    <input type="text" id="curso" placeholder="Curso">
+
+    <button onclick="cadastrarEstudante()">Cadastrar</button>
+
+    <hr>
+
+    <h2>Registrar Frequência</h2>
+
+    <select id="estudante"></select>
+
+    <input type="date" id="data">
+
+    <select id="situacao">
+        <option value="Presença">Presença</option>
+        <option value="Falta justificada">Falta justificada</option>
+        <option value="Falta não justificada">Falta não justificada</option>
+    </select>
+
+    <button onclick="registrarFrequencia()">Registrar</button>
+
+    <hr>
+
+    <h2>Estudantes Cadastrados</h2>
+
+    <ul id="listaEstudantes"></ul>
+
+    <hr>
+
+    <h2>Alertas Pedagógicos</h2>
+
+    <div id="alertas"></div>
+
+    <hr>
+
+    <h2>Histórico de Frequência</h2>
+
+    <select id="filtro" onchange="mostrarHistorico()">
+        <option value="">Todos os estudantes</option>
+    </select>
+
+    <ul id="historico"></ul>
+<script src="isis7.js"></script>
+
+</body>
+</html>
