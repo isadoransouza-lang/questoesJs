@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+</head>
+<body>
+     <h1>Sistema de Gerenciamento de Tarefas</h1>
+
+    <h2>Cadastrar Tarefa</h2>
+
+    <input type="hidden" id="idTarefa">
+
+    <input type="text" id="titulo" placeholder="Título">
+
+    <br><br>
+
+    <textarea id="descricao" placeholder="Descrição"></textarea>
+
+    <br><br>
+
+    <select id="prioridade">
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+    </select>
+
+    <input type="date" id="prazo">
+
+    <br><br>
+
+    <button onclick="salvarTarefa()">Salvar Tarefa</button>
+    <button onclick="limparFormulario()">Limpar</button>
+
+    <hr>
+
+    <h2>Indicadores</h2>
+
+    <p>Total de tarefas: <span id="total">0</span></p>
+    <p>Tarefas concluídas: <span id="concluidas">0</span></p>
+    <p>Tarefas pendentes: <span id="pendentes">0</span></p>
+
+    <hr>
+
+    <h2>Lista de Tarefas</h2>
+
+    <select id="filtro" onchange="mostrarTarefas()">
+        <option value="Todas">Todas</option>
+        <option value="Pendentes">Pendentes</option>
+        <option value="Concluídas">Concluídas</option>
+        <option value="Atrasadas">Atrasadas</option>
+    </select>
+
+    <select id="ordenacao" onchange="mostrarTarefas()">
+        <option value="prazo">Ordenar por prazo</option>
+        <option value="prioridade">Ordenar por prioridade</option>
+    </select>
+
+    <div id="listaTarefas"></div>
+
+    <script src="isis8.js"></script>
+</body>
+</html>
